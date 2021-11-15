@@ -4,6 +4,8 @@ Key review before running big API queries:
 - https://www.mediawiki.org/wiki/API:Etiquette
 
 technical
+- Time series templates
+    - https://machinelearningmastery.com/autoregression-models-time-series-forecasting-python/
 - API:RecentChanges
     - https://www.mediawiki.org/wiki/API:RecentChanges
     - https://www.mediawiki.org/w/api.php?action=help&modules=main#main/datatype/timestamp
@@ -17,7 +19,8 @@ technical
 - API: Revisions
     - https://www.mediawiki.org/wiki/API:Revisions
 - Dumps
-    - https://dumps.wikimedia.org/other/analytics/
+    - https://dumps.wikimedia.org/other/mediawiki_history/2021-10/enwiki/
+    - https://wikitech.wikimedia.org/wiki/Analytics/Data_Lake/Edits/MediaWiki_history
     - https://dumps.wikimedia.org/other/analytics/
     - https://dumps.wikimedia.org/other/mediawiki_history/readme.html
 - Look it up later
