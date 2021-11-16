@@ -16,6 +16,8 @@ technical
     - https://stream.wikimedia.org/?doc#/streams/get_v2_streaam_recentchange
     - https://towardsdatascience.com/introduction-to-apache-kafka-with-wikipedias-eventstreams-service-d06d4628e8d9
     - https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/recentchange/current.yaml
+- API: Categories
+    - https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bcategories
 - API: Revisions
     - https://www.mediawiki.org/wiki/API:Revisions
 - Dumps
