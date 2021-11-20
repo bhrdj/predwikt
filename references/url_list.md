@@ -18,9 +18,13 @@ technical
     - https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/recentchange/current.yaml
 - API: Categories
     - https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bcategories
+    - https://www.mediawiki.org/wiki/Manual:Categorylinks_table
     - https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps
+    - https://stackoverflow.com/questions/27279649/how-to-build-wikipedia-category-hierarchy?noredirect=1&lq=1
+    - https://kodingnotes.wordpress.com/2014/12/03/parsing-wikipedia-page-hierarchy/
 - API: Revisions
     - https://www.mediawiki.org/wiki/API:Revisions
+    - https://www.mediawiki.org/wiki/Manual:Revision_table
 - Dumps
     - https://dumps.wikimedia.org/other/mediawiki_history/2021-10/enwiki/
     - https://wikitech.wikimedia.org/wiki/Analytics/Data_Lake/Edits/MediaWiki_history
