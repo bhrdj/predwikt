@@ -18,6 +18,7 @@ technical
     - https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/recentchange/current.yaml
 - API: Categories
     - https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bcategories
+    - https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps
 - API: Revisions
     - https://www.mediawiki.org/wiki/API:Revisions
 - Dumps
