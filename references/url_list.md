@@ -26,6 +26,12 @@ technical
     - https://www.mediawiki.org/wiki/API:Revisions
     - https://www.mediawiki.org/wiki/Manual:Revision_table
 - Migrating MySQL dumps -> PostgreSQL
+    - https://mariadb.com/kb/en/mysql-command-line-client/
+    - https://mariadb.org/download/?t=repo-config&d=20.04+%22focal%22&v=10.3&r_m=ossplanet
+    - FAILED https://mariadb.org/download/?t=repo-config&d=20.04+%22focal%22&v=10.3&r_m=blendbyte
+    - https://askubuntu.com/questions/806738/mariadb-10-1-and-ubuntu-16-04-unable-to-set-password-for-the-mariadb-root-use
+    - https://mariadb.com/docs/deploy/topologies/single-node/community-server-10-3/
+    - MAYBE NOT THIS ONE https://computingforgeeks.com/install-mariadb-on-ubuntu-and-centos/
     - https://wiki.postgresql.org/wiki/Converting_from_other_Databases_to_PostgreSQL
     - https://ubuntu.com/server/docs/databases-mysql
     - https://datawookie.dev/blog/2021/03/resurrecting-a-mysql-database/
