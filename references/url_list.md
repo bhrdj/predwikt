@@ -25,6 +25,10 @@ technical
 - API: Revisions
     - https://www.mediawiki.org/wiki/API:Revisions
     - https://www.mediawiki.org/wiki/Manual:Revision_table
+- Migrating MySQL dumps -> PostgreSQL
+    - https://wiki.postgresql.org/wiki/Converting_from_other_Databases_to_PostgreSQL
+    - https://ubuntu.com/server/docs/databases-mysql
+    - https://datawookie.dev/blog/2021/03/resurrecting-a-mysql-database/
 - Dumps
     - https://dumps.wikimedia.org/other/mediawiki_history/2021-10/enwiki/
     - https://wikitech.wikimedia.org/wiki/Analytics/Data_Lake/Edits/MediaWiki_history
