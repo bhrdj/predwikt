@@ -17,6 +17,7 @@ technical
     - https://towardsdatascience.com/introduction-to-apache-kafka-with-wikipedias-eventstreams-service-d06d4628e8d9
     - https://github.com/wikimedia/mediawiki-event-schemas/blob/master/jsonschema/mediawiki/recentchange/current.yaml
 - API: Categories
+    - https://vcat.toolforge.org/render?wiki=enwiki&category=Butterflies
     - https://www.mediawiki.org/w/api.php?action=help&modules=query%2Bcategories
     - https://www.mediawiki.org/wiki/Manual:Categorylinks_table
     - https://stackoverflow.com/questions/17432254/wikipedia-category-hierarchy-from-dumps
