@@ -48,3 +48,8 @@ technical
 alternative
 - https://www.kaggle.com/c/wikichallenge
 
+https://serverfault.com/questions/146525/how-can-i-speed-up-a-mysql-restore-from-a-dump-file 
+https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-ssh-session
+
+- cron
+- nohup
