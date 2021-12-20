@@ -43,8 +43,14 @@ technical
     - https://dumps.wikimedia.org/other/mediawiki_history/readme.html
 - Look it up later
     - https://towardsdatascience.com/wikipedia-as-a-valuable-data-science-tool-6769991b43b7
-
-
+- Research Ideas
+    - https://meta.wikimedia.org/wiki/Research:Effects_of_collaboration_patterns_on_article_quality
+    - https://www.sciencedirect.com/science/article/pii/S2212094721000475
+- Research nexi
+    - https://meta.wikimedia.org/wiki/Research:Index
+    - https://meta.wikimedia.org/wiki/Research:Projects
+    - https://research.wikimedia.org/projects.html                   **************
+    - 
 alternative
 - https://www.kaggle.com/c/wikichallenge
 
@@ -53,3 +59,6 @@ https://askubuntu.com/questions/8653/how-to-keep-processes-running-after-ending-
 
 - cron
 - nohup
+
+- SQL
+    - https://medium.com/analytics-vidhya/importing-data-from-a-mysql-database-into-pandas-data-frame-a06e392d27d7
