@@ -1,0 +1,73 @@
+Predict which wikipedia projects will get how many edits by day
+
+Based on:
+- news
+- wikipedia views
+- other time series data like weather
+
+Start with:
+- hurricanes, retrospective, jawiki.
+- continue with other wikiprojects/categories.
+
+--------------------------------------
+--------------------------------------
+
+Why is this interesting?
+
+- wikipedia edits are a steady stream in terms of volume.
+- question: how do wikipedia editors choose which articles to edit?
+    - reference article about entity creation: wikipedia article creation 
+    is partially related to news trends on the topic.
+
+why is this relevant?
+
+- Committed wikipedia contributors may want to understand edit-trends in order 
+to forecast upcoming edits. This may help them plan which categories of 
+articles to patrol, etc.
+- Wikipedia editors' choices about what to edit are time- and effort-intensive 
+personal choices, related to personal ideals and aspirations. Thus, this 
+analysis provides a model of how individuals' costly personal choices driven
+by intrinsic motivation can be predicted by news trends and current events. 
+This model may be interesting to various institutions predicting consumers', 
+students', academics', employees', and other individuals' choices related to
+intrinsic motivation.
+
+--------------------------------------
+--------------------------------------
+
+Minimal MVP Tasks:
+
+- create table "tcyc_page_ids_and_names":
+    - Table's purpose: Help generate the target_timeseries
+    - Table includes: One row for each page_id / page name combo in wikiproject
+    - Table's primary key (2-col pk): page_id, page name
+    - Table's other columns: none
+    - Table sorting: By page_id, then by page name
+- create table "target_dayseries":
+    - Table's purpose: hold actual targets and predicted targets
+    - Table includes: One row for every day during period
+    - Table's primary key: edit_day (datetime)
+    - Table's other columns: 
+        editcount_all_actual,        editcount_wikiproj_actual,
+        editcount_all_basepreds,     editcount_wikiproj_basepreds,
+        delta_all_actual_basepreds,  delta_wikiproj_actual_basepreds,
+- create table "japan_cyclones":
+    - Table's purpose: identify when cyclones hit Japan, to predict edits
+    - Table includes: One row for every day during period
+    - Table's primary key: edit_day (datetime
+    - Table's other columns:
+        cyc_onland,        cyc_onland_lag1to3,     cyc_onland_lag4to6
+                           cyc_onland_lead1to3,    cyc_onland_lead4to6
+        cyclone_severity,  cyc_severity_lag1to3,   cyc_severity_lag4to6,
+                           cyc_severity_lead1to3,    cyc_severity_lead4to6
+
+
+
+Extension concepts:
+- will need to use pyspark
+    - target-generation onehot tables will be sparse tables
+    - 
+- Categorize edits into relevant types: (controversy, self-removal, editor id)
+- 
+- If the same user makes multiple edits on an article within 1 hour, discard excess
+- Use IP editors timezones for additional analysis

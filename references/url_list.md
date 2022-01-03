@@ -50,6 +50,9 @@ technical
     - https://meta.wikimedia.org/wiki/Research:Index
     - https://meta.wikimedia.org/wiki/Research:Projects
     - https://research.wikimedia.org/projects.html                   **************
+- Wikiprojects
+    - https://stackoverflow.com/questions/54729496/how-to-get-wikipedia-data-of-wikiprojects
+- Jawiki
     - 
 alternative
 - https://www.kaggle.com/c/wikichallenge
