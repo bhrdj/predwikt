@@ -1,0 +1,19 @@
+page_namespace	Name	Purpose
+0	(Main)	Real content articles.[1]
+2	User	User pages.[2]
+4	Project	Information about the wiki.[3]
+6	File	Media description pages
+8	MediaWiki	Site interface customization[4]
+10	Template	Template pages
+12	Help	Help pages
+14	Category	Category description pages
+1	Talk	Real content articles.[1]
+3	User talk	User pages.[2]
+5	Project talk	Information about the wiki.[3]
+7	File talk	Media description pages
+9	MediaWiki talk	Site interface customization[4]
+11	Template talk	Template pages
+13	Help talk	Help pages
+15	Category talk	Category description pages
+-1	Special	Holds special pages
+-2	Media	Alias for direct links to media files
