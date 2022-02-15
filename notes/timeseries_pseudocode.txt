@@ -1,0 +1,21 @@
+timeseries_pseudocode.txt
+
+LIVE PREDICTION OF EDITS BY JAWIKI CATEGORY
+
+PRELIMINARY DATA PREP AND ANALYTICAL EDA
+- make a binary sparse matrix of categories and page_id's
+	- make proportional venn diagrams of different categories' coverages
+- make time-series dataframe:
+	- cols: categories
+	- rows: time periods (each day for last week, each week for last 8 weeks, each month for last 10 years)
+	- values: EDIT COUNTS
+- make twitter dataframe for each relevant twitter account:
+	- cols: tweet-text, datetime, tweet-category
+	- categories and total character count of all articles (for relative growth% analysis)
+
+
+- analysis
+	- features:
+		- edit counts (each day for last week, each week for last 8 weeks, each month for last 10 years)
+		- twitter 
+
