@@ -1,0 +1,77 @@
+with shortlist as (
+    select jawiki.warn_rows.t2014 
+    from jawiki.warn_rows 
+    where jawiki.warn_rows.t2014 is not null 
+    limit 200
+)
+
+select event_type, page_id, user_id, revision_id
+from jawiki.t2014
+where row_id not in(shortlist);
+
+
+
+
+
+------------------------------------
+
+with shortlist as (
+    select t2014 
+    from warn_rows 
+    where t2014 is not null
+)
+
+select event_type, page_id, user_id, revision_id
+from jawiki.t2014
+limit 10;
+
+---------------------------------------             OK
+
+select count(*)
+from jawiki.t2014
+where row_id not in(
+    select t2014 
+    from warn_rows 
+    where t2014 is not null
+)
+limit 10
+;
+
+-------------------------------------- OK
+
+create table foo (id bigint not null auto_increment, bar int, primary key id)
+
+insert into foo (bar) values (3);
+insert into foo (bar) values (3);
+insert into foo (bar) values (3);
+insert into foo (bar) values (3);
+insert into foo (bar) values (2);
+insert into foo (bar) values (2);
+insert into foo (bar) values (6);
+insert into foo (bar) values (6);
+insert into foo (bar) values (6);
+insert into foo (bar) values (6);
+insert into foo (bar) values (6);
+
+create table baz as (select * from foo where id in(select bar from foo));
+
+
+
+---------------------------------------             OK
+
+create table jawiki.h2014 as
+(
+    select * 
+    from jawiki.t2014
+    where jawiki.t2014.row_id not in
+    (
+        select jawiki.warn_rows.t2014 
+        from jawiki.warn_rows 
+        where jawiki.warn_rows.t2014 is not null
+    )
+    limit 10
+)
+;
+
+---------------------------------------             OK
+
