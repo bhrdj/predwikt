@@ -23,7 +23,6 @@ def download_file(url, dirpath='./'):
 urlpath = 'https://dumps.wikimedia.org/other/pageview_complete/2019/2019-10/'
 filenames = ['pageviews-20191001-user.bz2', 'pageviews-20191002-user.bz2']
 dirpath = '../data/raw/pageviews/'
-download_file()
 
 for filename in filenames:
     download_file(url=urlpath+filename, dirpath=dirpath)
