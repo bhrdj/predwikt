@@ -24,6 +24,15 @@ urlpath = 'https://dumps.wikimedia.org/other/pageview_complete/2019/2019-10/'
 filenames = ['pageviews-20191001-user.bz2', 'pageviews-20191002-user.bz2']
 dirpath = '../data/raw/pageviews/'
 
-for filename in filenames:
+for filename in [filenames[0]]:
     download_file(url=urlpath+filename, dirpath=dirpath)
+    
+for filename in [filenames[0]]:
+    filepath = os.path.join(dirpath, filename)
+    newfilepath = os.path.join(dirpath, filename + '.decompressed')
+    with open(newfilepath, 'wb') as new_file, bz2.BZ2File(filepath, 'rb') as file:
+        for data in iter(lambda : file.read(100 * 1024), b''):
+            new_file.write(data)
+
+
 
