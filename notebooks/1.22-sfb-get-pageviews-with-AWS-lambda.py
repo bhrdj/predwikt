@@ -1,0 +1,58 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # get pageviews with AWS
+
+# In[ ]:
+
+
+import os, requests, bz2
+
+
+# ##### function download_file
+
+# In[2]:
+
+
+def download_file(url, dirpath='./'):
+    local_filename = dirpath + url.split('/')[-1]
+    # NOTE the stream=True parameter below
+    with requests.get(url, stream=True) as r:
+        r.raise_for_status()
+        with open(local_filename, 'wb') as f:
+            for chunk in r.iter_content(chunk_size=131072):   #8192
+                # If you have chunk encoded response uncomment if
+                # and set chunk_size parameter to None.
+                #if chunk: 
+                f.write(chunk)
+    return local_filename
+# https://stackoverflow.com/questions/16694907/download-large-file-in-python-with-requests
+
+
+# ##### download many files
+
+# In[ ]:
+
+
+urlpath = 'https://dumps.wikimedia.org/other/pageview_complete/2019/2019-10/'
+filenames = ['pageviews-20191001-user.bz2', 'pageviews-20191002-user.bz2']
+dirpath = '../data/raw/pageviews/'
+download_file()
+
+
+# In[ ]:
+
+
+for filename in filenames:
+    download_file(url=urlpath+filename, dirpath=dirpath)
+
+
+# In[ ]:
+
+
+get_ipython().system("jupyter nbconvert --to script '1.22-sfb-get-pageviews-with-AWS-lambda.ipynb'")
+
+
+# ##### -----
+
+# ###### ------
