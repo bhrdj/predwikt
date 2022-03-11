@@ -26,8 +26,6 @@ dirpath = '../data/raw/pageviews/'
 
 for filename in [filenames[0]]:
     download_file(url=urlpath+filename, dirpath=dirpath)
-    
-for filename in [filenames[0]]:
     filepath = os.path.join(dirpath, filename)
     newfilepath = os.path.join(dirpath, filename + '.decompressed')
     with open(newfilepath, 'wb') as new_file, bz2.BZ2File(filepath, 'rb') as file:
