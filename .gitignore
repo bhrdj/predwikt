@@ -87,3 +87,7 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# bhrdwj 2022-03-14
+# private file transfer scripts for aws etc
+scripts/
