@@ -9,7 +9,7 @@ Predict wikipedia contribution or pageview traffic.
 Current dashboard:
 [predwikt.bhrdwj.net](https://predwikt.bhrdwj.net)
 
-==============================  
+---
 Project Organization (Cookiecutter)
 ------------
 
