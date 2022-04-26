@@ -26,7 +26,8 @@ Project Organization (Cookiecutter)
     ├── notebooks          <- Jupyter notebooks.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-
+    │
+    ├── src                <- Production version of model
 
 --------
 
