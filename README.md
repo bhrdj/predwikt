@@ -15,6 +15,7 @@ Project Organization (Cookiecutter)
 
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
+    ├── requirements.txt   <- Installation needs for a sufficient virtual environment
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
