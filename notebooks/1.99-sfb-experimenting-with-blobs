@@ -2,102 +2,12 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "e06d97ce-b9db-478a-a345-4a9a849e571c",
-   "metadata": {},
-   "source": [
-    "# Prelim ARIMA Retro. Analysis"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "1c1a963b-7951-4997-a7f2-9d4801db146f",
-   "metadata": {},
-   "source": [
-    "## notes"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "18151b20-64df-4dcc-a812-ac8e554ee4ae",
-   "metadata": {
-    "tags": []
-   },
-   "source": [
-    "###### **pageviews only:**"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "923a7c10-0089-40cd-8a9a-c59ff5451acc",
-   "metadata": {},
-   "source": [
-    "- pick pageid(s)\n",
-    "- get daily views series for 2 years\n",
-    "- regress pageviews ~ weekends, holidays, linear trend:\n",
-    "    - get residuals RS_VIEWS\n",
-    "- lag RS_VIEWS to get RS_VIEWS_L!, L2, etc.\n",
-    "- regress RS_VIEWS on:\n",
-    "    - a naive moving average of RS_VIEWS lags\n",
-    "    - and some AR lags of RS_VIEWS\n",
-    "- do ARIMA analysis of pageviews to compare"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "f8bf5e70-4eb8-4f99-8b6f-e475a5bddd6f",
-   "metadata": {
-    "jp-MarkdownHeadingCollapsed": true,
-    "tags": []
-   },
-   "source": [
-    "#### later"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "18a19369-39c0-4fd9-ab61-3393c17df93a",
-   "metadata": {
-    "jp-MarkdownHeadingCollapsed": true,
-    "tags": []
-   },
-   "source": [
-    "###### **edits only:**"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "5d62916b-58e6-4328-8376-3fe5dd2e8955",
-   "metadata": {},
-   "source": [
-    "same thing"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "a94ad46e-beea-4c36-8f4a-58647b050fea",
-   "metadata": {
-    "jp-MarkdownHeadingCollapsed": true,
-    "tags": []
-   },
-   "source": [
-    "###### **pageviews and edits:**"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "fec3d14d-2188-4480-8479-6be6c642943c",
-   "metadata": {},
-   "source": [
-    "- regress RS_EDITS on RS_VIEWS_L1\n",
-    "- regress RS_EDITS on RS_EDITS_LX and RS_VIEWS_LX"
-   ]
-  },
-  {
-   "cell_type": "markdown",
    "id": "59d4af61-49b0-4d94-98ed-b94be95e4cc1",
-   "metadata": {},
+   "metadata": {
+    "tags": []
+   },
    "source": [
-    "## setup"
+    "## experimenting with blobs"
    ]
   },
   {
